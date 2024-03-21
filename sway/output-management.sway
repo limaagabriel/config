@@ -1,8 +1,9 @@
 ### Output configuration
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+
 #output * bg /usr/share/backgrounds/gnome/morphogenesis-d.svg fill
-output * bg /usr/share/backgrounds/arch-gruvbox.png fill
 #output * bg #282828 solid_color
+output * bg /usr/share/backgrounds/arch-gruvbox.png fill
 
 # Example configuration:
 #

@@ -24,4 +24,21 @@ input type:touchpad {
     natural_scroll disabled
 }
 
+set $lock ~/.config/sway/scripts/lock.sh
+
+set $displayon swaymsg "output eDP-1 power on"
+set $displayoff swaymsg "output eDP-1 power off"
+
+set $kbdon busctl call --user sm.puri.OSK0 /sm/puri/OSK0 sm.puri.OSK0 SetVisible b true
+set $kbdoff busctl call --user sm.puri.OSK0 /sm/puri/OSK0 sm.puri.OSK0 SetVisible b false
+
+set $rotateon swaymsg "output eDP-1 transform 90 anticlockwise"
+set $rotateoff swaymsg "output eDP-1 transform 90 clockwise"
+
+bindswitch lid:on exec $lock; $displayoff;
+bindswitch lid:off exec $displayon;
+bindswitch tablet:on exec $kbdon; exec $rotateon;
+bindswitch tablet:off exec $kbdoff; exec $rotateoff;
+
 exec wl-paste -t text --watch clipman store --no-persist
+exec squeekboard
