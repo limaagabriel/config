@@ -7,6 +7,8 @@ set $up k
 set $right l
 set $terminal foot
 
+exec --no-startup-id ~/.config/sway/scripts/alternating_layouts.py
+
 include /etc/sway/config.d/*
 include ./idle-management.sway
 include ./input-management.sway
