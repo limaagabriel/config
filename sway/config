@@ -1,0 +1,18 @@
+### Variables
+
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $terminal foot
+
+include /etc/sway/config.d/*
+include ./idle-management.sway
+include ./input-management.sway
+include ./keybindings.sway
+include ./launcher.sway
+include ./output-management.sway
+include ./resize-mode.sway
+include ./status-bar.sway
+include ./style.sway

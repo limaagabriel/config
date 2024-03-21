@@ -1,0 +1,3 @@
+default_border pixel 2
+gaps inner 2
+client.focused #98971a #282828 #282828 #98971a #504945
