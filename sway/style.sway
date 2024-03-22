@@ -1,3 +1,5 @@
 default_border pixel 2
-gaps inner 2
-client.focused #98971a #282828 #282828 #98971a #504945
+gaps inner 0
+client.focused #98971a #282828 #282828 #504945 #202020
+client.focused_inactive #202020 #202020 #202020 #202020 #202020
+client.unfocused #202020 #202020 #202020 #202020 #202020
